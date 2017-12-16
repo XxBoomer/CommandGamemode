@@ -1,5 +1,5 @@
 <?php
-namespace BasicCommands;
+namespace CommandGamemode;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
 use pocketmine\Command\Command;
@@ -8,11 +8,11 @@ use pocketmine\entity\Effect;
 class Main extends PluginBase{
 	
 	public function onEnable(){
-		$this->getServer()->getLogger()->info("BasicCommands enabled!");
+		$this->getServer()->getLogger()->info("CommandGamemode enabled!");
 	}
 	
 	public function onDisable(){
-		$this->getServer()->getLogger()->info("BasicCommands disabled!");
+		$this->getServer()->getLogger()->info("CommandGamemode disabled!");
 	}
 	
 	public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
